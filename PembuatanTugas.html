@@ -1,0 +1,70 @@
+<html>
+	<title>PembuatanTugas</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	
+	<div id="containerd">
+		<!--TITLE MULAI-->
+		<div id="title">
+			<h1><a href='#'>PembuatanTugas</a></h1>
+		</div>
+		<!--MENU BAR-->
+		<div id="menubar">
+			<nav>
+				<ul>
+					<li><a href='home.html'>Home</a></li>
+					<li><a href='dashboard.html'>Dashboard</a></li>
+					<li><a href='profil.html'>Profil</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!--CONTENT-->
+		<!--BAR TOMBOL-->
+		<div id="dashboard_catadd">
+			<div id="dashboard_cat">
+				<a href="addcat.html"><img src="cat_button.png"></img></a>
+			</div>
+		</div>
+		
+		<!--CONTAINER TASK-->
+		<div id="dashboard_container">
+			<div id ="dashboard_sidebar">
+				<div id="dashboard_containercat">
+					<div id="dashboard_kotakcat" alt="do.me">
+						<a href ="dashboard2.html"><p><strong>Akademik</strong></p></a>
+					</div>
+					<div id="dashboard_kotakcat">
+						<a href ="dashboard.html"><p><strong>Organisasi</strong></p></a>
+					</div>
+				</div>
+			</div>
+			<div id="stylized_tgs" class="myform">
+				<form id="form" name="formHalamanUtama" method="post" action="dashboard.html" onsubmit="return validasiHU();">
+					<label>Nama Tugas
+					</label>
+					<input type="text" name="nama_Tgs" id="nama_Tgs" MAXLENGTH=25 placeholder="Input Nama Tugas"/><br/>
+					<label>Attachment
+					</label>
+					<input type="text" name="attach" id="attach" placeholder="Input File"/><br/>
+					<label>Deadline
+					</label>
+					<input type="date" name="deadline" id="deadline" /><br/>
+					<label>Asignee
+					</label>
+					<input type="text" name="asignee" id="asignee" placeholder="Input Asignee"/><br/>
+					<label>Tag
+					</label>
+					<input type="text" name="tag" id="tag" placeholder="Input Tag"/><br/>
+					<br/>
+					<button type="submit">Add</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--Copyright-->
+	<div id = "copyright">
+		<copyright>Copyright 2013 JDH</copyright>
+	</div>
+
+</html>

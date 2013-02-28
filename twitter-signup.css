@@ -1,0 +1,331 @@
+
+*:focus{
+	outline:none; /* Prevents blue border in Webkit */
+}
+
+
+body {
+	background: #fff url(background.png) no-repeat left top ;
+	color #73360d ;
+	text-align: justify ;
+}
+
+#container {
+	height:2100px;
+	width:1210px;
+	margin:85px 0px 0px 90px ;
+	float:left ;
+	background:url(bagianisi.png) no-repeat;
+}
+
+#containerd {
+	height:1300px;
+	width:1210px;
+	margin:0px 0px 0px 90px ;
+	float:left ;
+}
+
+#title {
+	height:133px;
+	width: 696px;
+	float:left ;
+}
+
+h1 {
+	text-indent: -9999px ;
+	float:left ;
+}
+
+h1 a{
+	display:block ;
+	background:url(judul_header.png) no-repeat center top ;
+	float:left ;
+	height:133px ;
+	width:696px ;
+	margin-left:240px ;
+	margin-top:60px;
+}
+	
+#navigation {
+	float:left ;
+	width:538px ;
+	height:82px ;
+	margin-left:340px ;
+	margin-top:-100px
+}
+
+.navlinks li {
+	list-style-type:none ;
+	display:bloack ;
+	float:left ;
+	width:100px ;
+	text-align : center ;
+	margin-top:210px ;
+}
+
+.navlinks li a {
+	text-decoration:none ;
+	color: #000;
+	font-weight:bold ;
+	text-transform: uppercase ;
+	font-size:16px ;
+	letter-spacing: -2px ;
+	font-family: sans-serif ; 
+}
+
+.navlinks li a:hover {
+	color: #2e97da ;
+}
+
+#maindisplay {
+	float:left ;
+	height:529px;
+	width:950px;
+	margin-left:190px;
+	margin-top:200px;
+}
+
+#maindisplay-image {
+	float:left;
+	width:550px;
+	height:301px ;
+}
+
+#maindisplay-laptop{
+	margin-left:40px;
+	margin-top:130px;
+	float:left ;
+	height:100px ;
+	width:700px ;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-family:sans-serif ;
+  text-align:center ;
+  color:#3e4041; 
+}
+
+p {
+  font-family:sans-serif ;
+  text-align:center;
+  color:#3e4041;
+}
+
+.inner {
+    float: left;
+    position: relative;
+    left:40% ;
+}
+
+#featured {
+	float:left ;
+	height:832px;
+	width:800px;
+	margin-left:80px;
+	margin-top:260px;
+}
+
+copyright {
+	margin-bottom:80px ;
+	margin-left:600px;
+	float:left;
+	height:20px;
+	width:200px;
+	color:#fff;
+	font-family:arial;
+}
+
+#dashboard_container {
+	float:left ;
+	height:700px;
+	width:1210px ;
+	margin-left:150px;
+}
+
+#dashboard_sidebar {
+	float:left;
+	height:610px;
+	width:231px ;
+	margin-left:0px;
+	margin-top:0px;
+	background:url('samping.png') no-repeat;
+}
+
+#dashboard_taskcontainer {
+	float:left;
+	height:700;
+	width:610px ;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+#dashboard_cat{
+	float:left;
+	height:52px;
+	width:102px ;
+	margin-left:156px;
+	margin-top:230px;
+
+}
+
+#dashboard_add{
+	float:left;
+	height:52px;
+	width:102px ;
+	margin-left:600px;
+	margin-top:230px;
+
+}
+
+#dashboard_tasks{
+	float:left;
+	height:56px;
+	width:600px;
+	margin-top:0px;
+	background:url('bartask.png') no-repeat ;
+}
+
+#dashboard_containercat{
+	float:left;
+	height:400px;
+	width:147px;
+	margin-left:43px ;
+	margin-top:43px ;
+}
+
+#dashboard_aktifcat{
+	float:left;
+	height:40px;
+	width:147px;
+	margin-left:0px ;
+	margin-top:5px ;
+	background:#edf600 url(kotakcat.png) no-repeat ;
+}
+
+#dashboard_kotakcat{
+	float:left;
+	height:40px;
+	width:147px;
+	margin-left:0px ;
+	margin-top:5px ;
+	background:url(kotakcat.png) no-repeat ;
+}
+
+pcat{
+  font-family:sans-serif ;
+  margin-top:2px;
+  text-align:right;
+  color:#4e4e4e;
+}
+
+form {
+	margin: 20px auto;
+}
+
+p {
+	line-height: 1.6;
+}
+
+
+#twitter input, #twitter  textarea , #gaiaOnline input , #gaiaOnline textarea{
+	background-color:#fff;
+	border:1px solid #ccc;
+	font-size:18px;
+	margin:0;
+	padding:8px;
+	width:200px;
+	display:block;
+	
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	float:left;
+}
+
+#twitter textarea {
+		min-height:200px;
+}
+
+#twitter input:hover, #twitter textarea:hover {
+	border-color:inherit !important;
+	background-color:#EfEfEf;
+	-webkit-border-radius:5px 0 0 5px;
+	-moz-border-radius:5px 0 0 5px;
+	border-radius:5px 0 0 5px;
+
+}
+
+/* The interesting bit */
+
+#twitter input:not(:focus),#twitter textarea:not(:focus) {
+	opacity:0.6;
+}
+
+#twitter  input:required,#twitter  textarea:required {
+}
+
+#twitter  input:valid,#twitter  textarea:valid {
+	opacity:0.8;
+}		
+
+#twitter input:focus:invalid,#twitter textarea:focus:invalid {
+	border:1px solid red;
+	background-color:#FFEFF0;
+}
+
+#twitter input[type=submit] {
+	background:none;
+	font-size:15px;
+	opacity:1;
+	padding:5px;
+	width:150px;
+	-moz-border-radius:5px;
+	-webkit--border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:-10px;
+	margin-left:103px;
+	margin-top:10px;
+	background:url("https://s3.amazonaws.com/twitter_production/a/1274834447/images/buttons/bg-btn.gif") repeat-x scroll 0 0 #DDDDDD;
+	text-shadow:1px 1px 0 #FFFFFF;
+	border-color:#DDDDDD #DDDDDD #CCCCCC;
+	color: #333;
+}
+#twitter .outerDiv{
+	-webkit-transition: all 1s linear;
+	margin-bottom:16px;
+	margin-top:8px;
+}
+#twitter .outerDiv:hover .message{
+	opacity:1;
+	display:block;
+}
+#twitter .message{	
+	width:200px;
+	float:left;
+	opacity:0;
+	-moz-border-radius:0 10px 10px 0;
+	-webkit-border-radius:0 10px 10px 0;
+	border-radius-bottomright:0 10px 10px 0;
+	background:url("https://s3.amazonaws.com/twitter_production/a/1274739546/images/signup_info.gif") no-repeat scroll 13px 50% #F2F2F2;
+	border-color:#DBDBDB;
+	border-style:solid;
+	border-width:1px 1px 1px 2px;
+	color:#666666;
+	display:none;
+	font-size:12px;
+	line-height:1.45em;
+	padding:0.85em 10px 0.85em 30px;
+	text-transform:lowercase;
+}
+
+.clearfix{
+	clear:both;
+}

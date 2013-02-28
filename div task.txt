@@ -1,0 +1,34 @@
+<div id ="dashboard_sidebar">
+				<img src="samping.png"></img>
+		</div>
+		<div id="dasboard_task">
+				<img src="bar_task.png"></img>
+			</div>
+		<div id="dashboard_taskcontainer">
+			
+			<div id="dasboard_task">
+			</div>
+			<div id="dasboard_task">
+			</div>
+		</div>
+		
+		
+		$(function() {
+    var button = $('#loginButton');
+    var box = $('#loginBox');
+    var form = $('#loginForm');
+    button.removeAttr('href');
+    button.mouseup(function(login) {
+        box.slideToggle('slow');
+        button.toggleClass('active');
+    });
+    form.mouseup(function() { 
+        return false;
+    });
+    $(this).mouseup(function(login) {
+        if(!($(login.target).parent('#loginButton').length > 0)) {
+            button.removeClass('active');
+            box.hide();
+        }
+    });
+});

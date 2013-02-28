@@ -1,0 +1,94 @@
+<html>
+	<title>Dashboard</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="cat.js"></script>
+	<div id="container">
+		<!--TITLE MULAI-->
+		<div id="title">
+			<h1><a href='#'>Dashboard</a></h1>
+		</div>
+		<div id="searchbox"> 
+			<form method="get" action="/search" id="search">
+				<input name="q" type="text" size="40" placeholder="Search..." />
+			</form>
+		</div>
+		<!--MENU BAR-->
+		<div id="menubar">
+			<nav>
+				<ul>
+					<li><a href='home.html'>Home</a></li>
+					<li><a href='dashboard.html'>Dashboard</a></li>
+					<li><a href='profil.html'>Profil</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!--CONTENT-->
+		<!--BAR TOMBOL-->
+		<div id="dashboard_catadd">
+		</div>
+		
+		<!--CONTAINER TASK-->
+		<div id="dashboard_container">
+			<div id ="dashboard_sidebar">
+				<div id="dashboard_containercat">
+					<div class="dashboard_kotakcat" id="catakademik" alt="do.me">
+						<a href ="#" onclick="changecategory(0)" id="akademik"><p><strong>Akademik</strong></p></a>
+					</div>
+					<div class="dashboard_kotakcat" id="catorganisasi">
+						<a href ="#" onclick="changecategory(1)" id="organisasi"><p><strong>Organisasi</strong></p></a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="rinciantugas">
+				<img src="buku.jpg">
+				<br>
+				<px>Nama		: <input id="N1" type="text" value="Baca Buku" readonly></px>
+				<br>
+				<px>Deadline	: <input  id="N2" type="date" value="1992-02-24" readonly></px>
+				<br>
+				<px>Assignee	: <input id="N3" type="text" value="Joko" readonly></px>
+				<br>
+				<px>Tag		: <input id="N4" type="text" value="Kuliah, Akademik" readonly></px>
+				<br>
+				<button id="tombol" onclick="edit_list();">Edit</button>
+				<br>
+				<px>Komentar	: </px>
+				<form action="/html/tags/html_form_tag_action.cfm" method="post">
+				Comments<br/>
+				<textarea name="comments" id="comments">
+				Hey... say something!
+				</textarea><br />
+				<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</div>
+			
+	</div>
+	<!--Copyright-->
+	<div id = "copyright">
+		<copyright>Copyright 2013 JDH</copyright>
+	</div>
+	<script>
+		var editable = false;
+		function edit_list(){
+			if (!(editable)){
+				document.getElementById("N1").readOnly=false;
+				document.getElementById("N2").readOnly=false;
+				document.getElementById("N3").readOnly=false;
+				document.getElementById("N4").readOnly=false;
+				document.getElementById("tombol").innerHTML = "Submit";
+				editable = true;
+			}
+			else{
+				document.getElementById("N1").readOnly=true;
+				document.getElementById("N2").readOnly=true;
+				document.getElementById("N3").readOnly=true;
+				document.getElementById("N4").readOnly=true;
+				document.getElementById("tombol").innerHTML = "Edit";
+				editable = false;
+			}
+		}
+	</script>	
+</html>

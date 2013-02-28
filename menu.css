@@ -1,0 +1,51 @@
+aside{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+	display:block;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;         
+}
+
+/* Layout styles */
+
+/* Vertical menu */
+
+#menu li{
+  margin: 0 0 3px 0;             
+}
+
+#menu a{
+  display: block;
+  *display: inline-block;
+  *width: 240px;
+  text-decoration: none;	            
+  background: #ddd;
+  color: #444;	
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font: bold 12px Arial,Helvetica;          
+  border-radius:5px;
+  box-shadow: 0 1px 0 #ccc;   
+}
+
+#menu a:hover{
+    color: #eee;
+    background: #9c9c9c;
+    background: linear-gradient(top, #bbb, #999);          
+}
+
+#menu ul a{
+    background: #f2f2f2;
+    text-transform: none;
+    font-weight: normal;            
+}
+
+#menu ul a:hover{
+    background: #fafafa;
+    color: #444;
+}   
